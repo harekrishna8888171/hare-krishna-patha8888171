@@ -1,3 +1,4 @@
+
 # Importing required libraries
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -46,7 +47,7 @@ time.sleep(5)
 # time.sleep(2)
 
 # Verifying that the laptop has been added to the cart
-cart_count = driver.find_element("id", "nav-cart-count")
+cart_count = driver.find_element("id","nav-cart-count")
 assert cart_count.text == "1"
 cart_count.click()
 
